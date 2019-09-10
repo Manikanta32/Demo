@@ -1,0 +1,39 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+                         
+ <bean id="demo" class="com.pack.bean.Demo">
+ <property name="theList"> 
+   <list>
+          <value>100</value>  
+          <value>200</value>
+          <value>300</value>
+          <value>100</value>  
+   </list>
+   </property> 
+ 
+ <property name ="theSet">
+    <set>
+          <value>400</value>
+          <value>500</value>
+          <value>600</value> 
+    </set> 
+ </property>
+ <property name="theMap">
+ <map>
+      <entry key="name" value="Mani"></entry>
+      <entry key="age"  value="27"></entry>
+      <entry key="dob"  value="23-06-1992"></entry>
+ </map>
+ </property>
+ <property name="theProps">
+     <value>
+             name=sudheer
+             age=29
+             dob=13-07-1990   
+     </value>   
+ </property>
+ </bean>                                                     
+</beans>
